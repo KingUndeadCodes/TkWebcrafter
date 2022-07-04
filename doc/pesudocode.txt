@@ -1,3 +1,6 @@
+# main.py
 Import necessary files and modules
 
 Assemble the elements of the program if this is "main.py"
+
+# windowMain.py
