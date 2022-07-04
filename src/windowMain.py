@@ -1,4 +1,5 @@
 import tkinter as tk
+import widgetMain
 window = tk.Tk()
 
 #Constants
