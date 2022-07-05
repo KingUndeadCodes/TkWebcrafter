@@ -3,3 +3,9 @@ def save_file():
 
 def open_file():
     pass
+
+def help():
+    pass
+
+def about():
+    pass
