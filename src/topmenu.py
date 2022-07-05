@@ -14,7 +14,11 @@ def draw_menubar():
         file_menu.add_command(label = "Exit", command = windowMain.window.quit)
 
     def help_submenu():
-        pass
+        help_menu = Menu(menu_bar)
+        menu_bar.add_cascade(label = "Help", menu = help_menu)
+        help_menu.add_command(label = "Help", command = help)
+        help_menu.add_command(label = "About", command = about)
 
     file_submenu()
+    help_submenu()
     windowMain.window.config(menu = menu_bar)
