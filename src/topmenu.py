@@ -15,6 +15,3 @@ def draw_menubar():
 
     file_submenu()
     windowMain.window.config(menu = menu_bar)
-
-def draw_topbar():
-    draw_menubar()
