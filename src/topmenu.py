@@ -8,7 +8,7 @@ def draw_menubar():
 
     def file_submenu():
         file_menu = Menu(menu_bar)
-        menu_bar.add_cascade(label = "File")
+        menu_bar.add_cascade(label = "File", menu = file_menu)
         file_menu.add_command(label = "Save", command = save_file)
         file_menu.add_command(label = "Open", command = open_file)
 
