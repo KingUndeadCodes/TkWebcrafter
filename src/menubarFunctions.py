@@ -42,3 +42,6 @@ def box_debug():
 def open_debug():
     singlefile = tkinter.filedialog.askopenfile(mode='r')
     tkinter.messagebox.showinfo(title='File Debug', message=singlefile)
+
+def nested_box():
+    tkinter.messagebox.showinfo(title="Nested Menu", message = "Nested Menu Correct!")
