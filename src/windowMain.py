@@ -3,7 +3,7 @@ import topmenu
 window = tk.Tk()
 
 #Constants
-window_title = "Placerholder"
+window_title = "TkHTML"
 window_size = "1000x750"
 
 
