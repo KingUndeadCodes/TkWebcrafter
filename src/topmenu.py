@@ -1,3 +1,4 @@
+from distutils.log import debug
 from tkinter import *
 from menubarFunctions import *
 import windowMain
@@ -30,12 +31,18 @@ def draw_menubar():
         help_menu.add_command(label = "Help", command = help)
         help_menu.add_command(label = "About", command = about)
 
+
     def debug_submenu():
         debug_menu = Menu(menu_bar)
         menu_bar.add_cascade(label = "Debug", menu = debug_menu)
         debug_menu.add_command(label = "Print to console", command = print_debug)
         debug_menu.add_command(label = "Message Box", command=box_debug)
         debug_menu.add_command(label = "Open File Test", command=open_debug)
+        debug_menu.add_checkbutton(label = "Checkbox")
+        nested_submenu = Menu(debug_menu)
+        debug_menu.add_cascade(label = "Submenu", menu=nested_submenu)
+        nested_submenu.add_command(label = "Nested Submenu", command = nested_box)
+        
 
     #Assemble submenu functions to draw the menu bar
     file_submenu()
