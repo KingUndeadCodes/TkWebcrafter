@@ -1,4 +1,9 @@
 #File menu functions
+from tkinter import messagebox
+from tkinter import filedialog
+import tkinter
+
+
 def save_file():
     pass
 
@@ -30,3 +35,10 @@ def about():
 
 def print_debug():
     print('Hello World! :D')
+
+def box_debug():
+    tkinter.messagebox.showinfo(title='Test', message='Hello World! :D')
+    
+def open_debug():
+    singlefile = tkinter.filedialog.askopenfile(mode='r')
+    tkinter.messagebox.showinfo(title='File Debug', message=singlefile)
