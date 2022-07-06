@@ -14,6 +14,16 @@ def draw_menubar():
         file_menu.add_separator()
         file_menu.add_command(label = "Exit", command = windowMain.window.quit)
 
+    def edit_submenu():
+        edit_menu = Menu(menu_bar)
+        menu_bar.add_cascade(label = "Edit", menu = edit_menu)
+        edit_menu.add_command(label = "Copy", command = copy)
+        edit_menu.add_command(label = "Cut", command = cut)
+        edit_menu.add_command(label = "Paste", command = paste)
+        edit_menu.add_separator()
+        edit_menu.add_command(label = "Undo", command = undo)
+        edit_menu.add_command(label = "Redo", command = redo)
+
     def help_submenu():
         help_menu = Menu(menu_bar)
         menu_bar.add_cascade(label = "Help", menu = help_menu)
@@ -22,5 +32,6 @@ def draw_menubar():
 
     #Assemble submenu functions to draw the menu bar
     file_submenu()
+    edit_submenu()
     help_submenu()
     windowMain.window.config(menu = menu_bar)

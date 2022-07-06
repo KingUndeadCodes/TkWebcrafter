@@ -5,6 +5,22 @@ def save_file():
 def open_file():
     pass
 
+#Edit menu functions
+def copy():
+    pass
+
+def cut():
+    pass
+
+def paste():
+    pass
+
+def undo():
+    pass
+
+def redo():
+    pass
+
 #Help menu functions
 def help():
     pass
