@@ -1,5 +1,6 @@
-#Must have py2exe installed.'
-#Run this program to build for Windows (Unix not tested.)
+#Must have py2exe installed.
+#Run this command:
+#python -m py2exe build.py
 
 from distutils.core import setup
 import tkinter, windowMain, topmenu
