@@ -19,6 +19,7 @@ def draw_menubar():
         help_menu.add_command(label = "Help", command = help)
         help_menu.add_command(label = "About", command = about)
 
+    #Assemble submenu functions to draw the menu bar
     file_submenu()
     help_submenu()
     windowMain.window.config(menu = menu_bar)

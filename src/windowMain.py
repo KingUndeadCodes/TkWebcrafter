@@ -7,6 +7,7 @@ window_title = "Placerholder"
 window_size = "1000x750"
 
 
+#Defines and assembles properties of the windows
 def draw_window():
     window.geometry(window_size)
     window.title(window_title)
