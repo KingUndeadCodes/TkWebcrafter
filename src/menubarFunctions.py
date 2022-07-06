@@ -11,3 +11,6 @@ def help():
 
 def about():
     pass
+
+def print_debug():
+    print('Hello World! :D')
