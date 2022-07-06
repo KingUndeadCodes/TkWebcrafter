@@ -34,6 +34,8 @@ def draw_menubar():
         debug_menu = Menu(menu_bar)
         menu_bar.add_cascade(label = "Debug", menu = debug_menu)
         debug_menu.add_command(label = "Print to console", command = print_debug)
+        debug_menu.add_command(label = "Message Box", command=box_debug)
+        debug_menu.add_command(label = "Open File Test", command=open_debug)
 
     #Assemble submenu functions to draw the menu bar
     file_submenu()
