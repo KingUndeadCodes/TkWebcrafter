@@ -2,6 +2,7 @@
 #Run this program to build for Windows (Unix not tested.)
 
 from distutils.core import setup
+import tkinter, windowMain, topmenu
 import py2exe
 
 setup(console=["main.py"])
