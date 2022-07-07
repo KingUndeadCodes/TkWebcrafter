@@ -4,7 +4,7 @@ import topmenu
 window = tk.Tk()
 
 #Constants
-window_title = "TkHTML"
+window_title = "TkWebcrafter"
 window_size = "1000x750"
 # https://www.geeksforgeeks.org/iconphoto-method-in-tkinter-python/ 
 # as to why this is here
