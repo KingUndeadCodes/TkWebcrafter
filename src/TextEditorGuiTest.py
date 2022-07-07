@@ -16,8 +16,10 @@ def open_file():
     text.insert(1.0, filecontent.read())
 
 def clear():
-    msgbox.askokcancel(title = "Wait!", message = "This will delete everything. Proceed?")
-    text.delete(1.0, "end")
+    clearanswer = msgbox.askokcancel(title = "Wait!", message = "This will delete everything. Proceed?")
+    print(clearanswer)
+    if clearanswer == True:
+        text.delete(1.0, "end")
 
 text = Text(root, relief = "raised", width = 20, height = 20)
 button2 = Button(root, text = "s", command = save_file)
