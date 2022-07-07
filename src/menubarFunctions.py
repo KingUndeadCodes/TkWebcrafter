@@ -5,10 +5,18 @@ import tkinter
 
 
 def save_file():
-    pass
+    save_buffer = text.get(1.0, "end")
+    print(save_buffer)
+    path = fd.asksaveasfilename()    
+    print(path)
+    fileout = open(path, 'w')
+    fileout.write(save_buffer)
+    fileout.close()
 
 def open_file():
-    pass
+    file = fd.askopenfilename()
+    filecontent = open(file, "r")
+    text.insert(1.0, filecontent.read())
 
 #Edit menu functions
 def copy():
