@@ -1,14 +1,21 @@
 from tkinter import *
 from tkinter import filedialog as fd
 from tkinter import messagebox as msgbox
+import tkinter
+from tkinter.filedialog import asksaveasfile
 
 root = Tk()
-root.geometry("200x165")
+root.geometry("700x565")
 root.title("Micro Notepad")
 
 def save_file():
     save_buffer = text.get(1.0, "end")
-    
+    print(save_buffer)
+    path = fd.asksaveasfilename()    
+    print(path)
+    fileout = open(path, 'w')
+    fileout.write(save_buffer)
+    fileout.close()
 
 def open_file():
     file = fd.askopenfilename()
@@ -21,7 +28,7 @@ def clear():
     if clearanswer == True:
         text.delete(1.0, "end")
 
-text = Text(root, relief = "raised", width = 20, height = 20)
+text = Text(root, relief = "raised")
 button2 = Button(root, text = "s", command = save_file)
 button2.config(height= 1, width = 2, )
 button3 = Button(root, text = "o", command = open_file)
@@ -34,6 +41,7 @@ button6 = Button(root)
 button6.config(height= 1, width = 2)
 button7 = Button(root)
 button7.config(height= 1, width = 2)
+
 
 text.pack(expand = True, side = "left")
 button2.pack(fill = BOTH, expand = True)
