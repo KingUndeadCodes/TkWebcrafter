@@ -1,4 +1,3 @@
-from distutils.log import debug
 from tkinter import *
 from menubarFunctions import *
 import windowMain
