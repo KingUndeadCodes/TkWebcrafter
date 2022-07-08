@@ -1,6 +1,6 @@
 from tkinter import PhotoImage
 import tkinter as tk
-import topmenu
+import topmenu, textWidget
 window = tk.Tk()
 
 #Constants
@@ -16,4 +16,5 @@ def draw_window():
     window.title(window_title)
     window.iconphoto(False, mainicon)
     topmenu.draw_menubar()
+    textWidget.draw_text()
     window.mainloop()

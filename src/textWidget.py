@@ -4,4 +4,4 @@ import windowMain
 
 def draw_text():
     textbox = Text(windowMain.window)
-    textbox.pack(side = "left", padx = 10)
+    textbox.pack(anchor = "w")
